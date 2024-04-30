@@ -9,9 +9,9 @@ export default function WhitePaper() {
     <div className="  min-h-screen pb-10">
       <div className="container mx-auto pt-8 font-nimbus font-light px-[20px]">
         <div className="flex items-center font-upheavtt text-4xl lg:text-6xl justify-between mb-10 ">
-          <div className="text-2xl opacity-0">{"-------"}</div>
-          <div className="">WHITE PAPER</div>
-          <div onClick={handlePrintPdf} className="text-2xl cursor-pointer">
+          <div className="text-[20px] opacity-0">Print</div>
+          <div className="text-[28px] md:text-3xl text-center">WHITE PAPER</div>
+          <div onClick={handlePrintPdf} className="text-[20px] cursor-pointer">
             Print
           </div>
         </div>
@@ -19,7 +19,7 @@ export default function WhitePaper() {
         <h2
           data-aos="fade-right"
           data-aos-delay="100"
-          className="font-upheavtt text-center text-2xl lg:text-3xl"
+          className="font-upheavtt text-center text-[20px] md:text-3xl "
         >
           What is $CHUCK?
         </h2>
@@ -40,7 +40,7 @@ export default function WhitePaper() {
         <h3
           data-aos="fade-right"
           data-aos-delay="100"
-          className="font-upheavtt text-center text-2xl lg:text-3xl mt-14"
+          className="font-upheavtt text-center text-[20px] lg:text-3xl mt-14"
         >
           The Vision
         </h3>
@@ -63,7 +63,7 @@ export default function WhitePaper() {
         <h3
           data-aos="fade-right"
           data-aos-delay="100"
-          className="font-upheavtt text-center text-2xl lg:text-3xl mt-14  "
+          className="font-upheavtt text-center text-[20px] lg:text-3xl mt-14  "
         >
           The Utility
         </h3>
