@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 
 export default function WhitePaper() {
-  const handlePrintPdf = () => {};
+  const handlePrintPdf = () => {
+    window.print();
+  };
 
   return (
     <div className="  min-h-screen pb-10">
       <div className="container mx-auto pt-8 font-nimbus font-light px-[20px]">
         <div className="flex items-center font-upheavtt text-4xl lg:text-6xl justify-between mb-10 ">
-          <div className="text-primary text-2xl">Print</div>
+          <div className="text-2xl opacity-0">{"-------"}</div>
           <div className="">WHITE PAPER</div>
           <div onClick={handlePrintPdf} className="text-2xl cursor-pointer">
             Print
