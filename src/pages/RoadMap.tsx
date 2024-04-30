@@ -9,11 +9,16 @@ export default function RoadMap() {
     <div id="roadmap" className="pb-20 pt-20">
       <div className="container mx-auto px-4">
         <div className="flex items-center font-upheavtt text-4xl lg:text-6xl justify-between mb-10 ">
-          <div className="text-[20px] opacity-0">Print</div>
+          <div className="text-[20px] opacity-0  bg-white  text-primary px-[10px] rounded">
+            Print
+          </div>
           <div className="text-[28px] md:text-3xl text-center">
             Chuck Roadmap
           </div>
-          <div onClick={handlePrintPdf} className="text-[20px] cursor-pointer">
+          <div
+            onClick={handlePrintPdf}
+            className="text-[20px] cursor-pointer  bg-white  text-primary px-[10px]  rounded"
+          >
             Print
           </div>
         </div>
