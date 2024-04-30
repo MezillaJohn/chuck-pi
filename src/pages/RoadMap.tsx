@@ -1,16 +1,23 @@
 import RoadMapCard from "../components/RoadMapCard";
 
 export default function RoadMap() {
+  const handlePrintPdf = () => {
+    window.print();
+  };
+
   return (
     <div id="roadmap" className="pb-20 pt-20">
       <div className="container mx-auto px-4">
-        <h2
-          data-aos="flip-up"
-          data-aos-delay="0"
-          className="font-upheavtt text-center text-3xl mb-14"
-        >
-          Chuck Roadmap
-        </h2>
+        <div className="flex items-center font-upheavtt text-4xl lg:text-6xl justify-between mb-10 ">
+          <div className="text-[20px] opacity-0">Print</div>
+          <div className="text-[28px] md:text-3xl text-center">
+            Chuck Roadmap
+          </div>
+          <div onClick={handlePrintPdf} className="text-[20px] cursor-pointer">
+            Print
+          </div>
+        </div>
+
         <div className="flex flex-col gap-5  font-nimbus">
           <RoadMapCard
             number="1"
