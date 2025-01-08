@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:17
+    container_name: postgres-container-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: Mezilla@1995
+      POSTGRES_DB: social
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+# networks:
+#   my_network:
+#     driver: bridge
+
