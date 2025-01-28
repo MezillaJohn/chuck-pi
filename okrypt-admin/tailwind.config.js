@@ -1,0 +1,61 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        background: "#000d1f",
+        backgroundLight: "rgba(1,16,36, .5)",
+        bottomTabBackground: "#011024",
+        primary: "#0C6BD1",
+        whiteOne: "#E1DFF3",
+        primaryDark: "#e4ecf5",
+        primaryOpacity: "rgba(215, 219, 224, 0.3)",
+        secondary: "#34ebe1",
+        disabled: "rgba(52, 235, 225, .6)",
+        secondaryLight: "rgba(52, 235, 225, .05)",
+        secondaryLighter: "rgba(52, 235, 225, .03)",
+        whiteTransaparent: "rgba(225,225,225, .08)",
+        danger: "#fc9d03",
+        dangerLight: "rgba(252, 157, 3, .2)",
+        red: "#e36429",
+        green: "#35b557",
+        pending: "#e3bb29",
+        tertiary: "#F8FBFF",
+        white: "#fff",
+        whiteSecondary: "#d1e6e4",
+        whiteThree: "#E1DFF3",
+        grayOne: "#767676",
+        greyFour: "#696969",
+        grayTwo: "#ddd",
+        grayThree: "#aaa",
+        dark: "#101010",
+        darkTwo: "#100000",
+        darkThree: "#222",
+        darkFour: "#555",
+        backdropOverlay: "rgba(0,0,0,0.4)",
+        textInputPlaceholder: "#acbfbd",
+        textInputBackground: "rgba(255, 255, 255, 0.1)",
+        border: "#071a33",
+        otherUserChatColor: "#e1f7f6",
+        border2: "#384961",
+      },
+      boxShadow: {
+        custom:
+          "0 4px 10px rgba(225, 225, 225, 0.07), 0 10px 10px rgba(225, 225, 226, 0.07)",
+      },
+      screens: {
+        xxs: "448px",
+        xs: "540px",
+        sm: "640px",
+        md: "820px",
+        mlg: "912px",
+        lg: "1024px",
+        sxl: "73.25rem",
+        xl: "1280px", // 1280px
+        xxl: "96rem", // 1536px
+      },
+    },
+  },
+  plugins: [],
+};
